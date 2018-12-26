@@ -18,7 +18,7 @@ def main():
 
     imageFull=numpy.concatenate((imarray1,imarray2),axis=1)
     img = Image.fromarray(imageFull,'RGB')
-    img.save('compare.tif')
+    img.save('Images/compare.tif')
     img.show()
     ssq = numpy.sum((imarray1-imarray2)**2)
     print("Sum of square difference: "+str(ssq))
